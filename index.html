@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lucas Hakewill | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,700i|Roboto+Mono:300|Droid+Serif" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid viewport-container home-container">
+  <div class="home-container-table">
+    <div class="home-container-text">
+      <h1>Lucas Hakewill</h1>
+      <h3>Business and tech fiend</h3>
+      <hr id="nav">
+      <ul class="navigation">
+        <li><a href="#about">about me</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="https://github.com/lucashakewill">github</a></li>
+        <li><a href="#contact">contact</a></li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="about-container">
+  <a name="about"></a>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-md-6 about-col">
+        <img src="http://res.cloudinary.com/dcnwwoygg/image/upload/c_scale,w_720/v1473583833/10841960_10205116614327952_4789000011859067610_o_zayhdb.jpg" class="img-responsive headshot">
+
+        <h4>My name is Lucas Hakewill</h4>
+        <div id="about-text">
+        <p>I'm a technology lover based in Sydney. I am currently working towards a career as
+a business analyst, because I have a passion for helping people solve their business
+problems, particularly when the solution involves using technology.
+I am also in the process of completing a front-end developer certificate from <a href="https://www.freecodecamp.com">free code camp</a>, a non-profit online bootcamp which teaches full-stack web development.</p>
+        <p>I recently graduated with a Bachelor of Arts (Music and Computer Science) from the University of Sydney, where I maintained a distinction average for the entirety of my studies.</p>
+          <p>In my spare time I like making music under the moniker <em>Lucas Owen</em>, as well as playing guitar in the band <em>Yachtshop</em>. During the day I work as a shoemaker, where I get to contribute every day to making beautiful pieces of wearable art.</p>
+      </div>
+      </div>
+      <div class="col-xs-12 col-md-6 contact-col">
+<a name="contact"></a>
+        <h2>Drop me a line, why don't you?</h2>
+
+        <form id="contact-form" action="/submit-contact" method="post">
+
+          <div class="form-group">
+            <label for="name">Your name:</label>
+            <input type="text" class="form-control" id="name" name="user_name" />
+          </div>
+
+          <div class="form-group">
+            <label for="mail">Your email address:</label>
+            <input type="email" class="form-control" id="mail" name="user_mail" />
+          </div>
+          <div class="form-group">
+            <label for="msg">Message:</label>
+            <textarea id="msg" class="form-control" name="user_message"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-default">Send your message</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid viewport-container gallery-container">
+  <span id="portfolio"></span>
+  <div class="gallery">
+    <h2>Here's what I've made for FreeCodeCamp:</h2>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+      <div class="gallery-item">
+        <a href="http://codepen.io/lucashakewill/full/pgGYjJ/"><img class="img-responsive gallery-img" src="http://res.cloudinary.com/dcnwwoygg/image/upload/v1468928303/lucas-3_jro3k5.jpg">
+        </a>
+        <h3>Vita Sackville-West</h3>
+        <p>I made a tribute page to Vita Sackville-West, the famous author, poet and gardener. It was built as part of my coursework for
+          <a href="http://freecodecamp.com">Free Code Camp</a>.</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+      <div class="gallery-item">
+        <a href="#"><img class="img-responsive gallery-img" src="http://placekitten.com/720/480">
+        </a>
+        <h3>Placeholder</h3>
+        <p> These placeholder images are sourced from <a href="http://placekitten.com">placekitten.</a> </p>
+      </div>
+    </div>
+
+  <!-- Add the extra clearfix for only the required viewport -->
+  <div class="clearfix visible-md visible-sm"></div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+      <div class="gallery-item">
+        <a href="#"><img class="img-responsive gallery-img" src="http://placekitten.com/720/480">
+        </a>
+        <h3>Another placeholder</h3>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend in ex ac aliquam. Aenean eleifend odio sollicitudin felis varius, at maximus enim rutrum. </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<footer>
+  <div class="container-fluid footer-container">
+
+    <p class="footer-headline">Made with love using <a href="http://getbootstrap.com">Bootstrap 3</a> and <a href="http://jquery.com">jQuery</a>.</p>
+
+
+      <p class="footer-rights"> All rights reserved</p>
+    </div>
+
+</footer>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</html>
