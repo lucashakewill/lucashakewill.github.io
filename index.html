@@ -1,42 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>JDoodle Embed test</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Convert CSV to JSON easily using Python in this interactive JDoodle embed. Modify the code and upload your CSV to fit your needs.">
+    <title>CSV to JSON Converter</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div style="width: 60%; margin: 0 auto; box-sizing: border-box; font-family: sans-serif;">
-    
-    <h1>JDoodle Embed Test</h1>
-    <p>Here is a test of the JDoodle premium embed.</p><br>
-  </div>
+    <div class="container">
+        <!-- Left Section: Instructions -->
+        <div class="left-panel">
+            <h1>Convert CSV to JSON</h1>
+            <p>
+                Use this simple Python script to convert your CSV data to JSON format. Upload your CSV file, modify the code, and see the results instantly. This tool is designed for developers and data analysts who need quick transformations without complex setup.
+            </p>
+            <ul>
+                <li>Upload your CSV file in the JDoodle editor.</li>
+                <li>Customize the Python code to handle your specific CSV data structure.</li>
+                <li>Hit "Run" to see the JSON output below the code editor.</li>
+            </ul>
+            <p>
+                The code provided below uses the <strong>pandas</strong> library to read your CSV file and convert it to a JSON format. You can modify the script to match your data schema, handle larger files, or add filters for more complex transformations.
+            </p>
+        </div>
 
-    <div data-pym-src="https://www.jdoodle.com/embed/v1/8f05e8ca557aead6" style="width: 60%; margin: 0 auto; box-sizing: border-box;"></div>
-    <input id="stdIn" type="text" value="">
-    <button onclick="setStdinInput()">Set Stdin Inputs</button>
-    <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
-    <script>
-      function setStdinInput() {
-        const stdIn = document.getElementById('stdIn').value
-        pym.autoInitInstances[0].sendMessage('setStdinInput', stdIn)
-      }
-    </script>
+        <!-- Right Section: JDoodle Embed -->
+        <div class="right-panel">
+            <h2>Interactive Editor</h2>
+            <!-- JDoodle Embed Code -->
+            <div data-pym-src="https://www.jdoodle.com/embed/v1/3e872a021f96fea4"></div>
+            <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
+        </div>
+    </div>
 
-    <button onclick="getCode()">Get Code</button>
-    <script>
-      function getCode() {
-        pym.autoInitInstances[0].sendMessage('getCode')
-      }
-      window.addEventListener("message", (event) => {
-        if (event.origin === "https://www.jdoodle.com" && event.data.script) {
-          console.log(event.data.script)
-        }
-      });
-    </script>
- 
+    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+<stripe-pricing-table pricing-table-id="prctbl_1Q9kG8CP3drYWU7MhjYNJ70q"
+publishable-key="pk_live_StwEAO04NAhEcSRqEho6H2XW">
+</stripe-pricing-table>
 
+    <script src="script.js"></script>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
 </html>
